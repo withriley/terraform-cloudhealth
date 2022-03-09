@@ -26,7 +26,7 @@ resource "google_logging_billing_account_sink" "billing" {
 # IAM and Permissions Config
 
 resource "google_organization_iam_custom_role" "cloudhealth" {
-  role_id     = "${local.billing_export_project_id}-cloudhealth"
+  role_id     = replace("${local.billing_export_project_id}-cloudhealth", "-", "_")
   org_id      = local.org_id
   title       = "CloudHealth Collector"
   description = "Role to allow CloudHealth access to exports"
