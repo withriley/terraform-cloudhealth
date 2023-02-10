@@ -1,5 +1,13 @@
 # Terraform CloudHealth Module
-Bootstrap For CloudHealth Configuration In Client GCP Orgs/Accounts
+
+The GitHub module terraform-cloudhealth is a Terraform module for managing infrastructure in Google Cloud Platform (GCP) with CloudHealth.
+
+The module provides a Terraform implementation of the CloudHealth GCP integration. This integration allows CloudHealth to access GCP billing and cost management data, enabling you to monitor and optimize your GCP spending.
+
+The module includes Terraform resources for creating and configuring a Google Cloud Project, BigQuery dataset, and service account for the CloudHealth integration. It also includes Terraform resources for setting up the necessary IAM roles and permissions to allow CloudHealth to access the billing data.
+
+By using this module, you can automate the deployment and configuration of the CloudHealth GCP integration, which can save time and effort compared to manual setup. Additionally, by using Terraform, you can version control and automate the management of your infrastructure, reducing the risk of errors and ensuring consistency across environments.
+
 ## Requirements
 
 No requirements.
